@@ -1,34 +1,38 @@
 class Mrk < Formula
   desc "Render Markdown beautifully in the terminal: syntax highlighting, tables, themes, and Mermaid diagrams as images."
   homepage "https://github.com/vmeyet/mrk-cli"
-  version "0.3.1"
+  version "0.4.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/vmeyet/mrk-cli/releases/download/v0.3.1/mrk-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "b95bc8c41e110d5f3e719813e4a2dc83d43094f2d5797d2aa9c7740c92d9dc76"
+      url "https://github.com/vmeyet/mrk-cli/releases/download/v0.4.0/mrk-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "ae9f72eab1093cd119597dc0dcdffcc44976ed058132b82d51ceeae1422fd2c4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vmeyet/mrk-cli/releases/download/v0.3.1/mrk-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "f7be39aa6b9e14f0059d82775a199d7f07e291455b4da40ded8e7a1ae30a7287"
+      url "https://github.com/vmeyet/mrk-cli/releases/download/v0.4.0/mrk-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "6fb77d4c48403470f11a310a473bd2802f5da306398df6f91db2fb880467a746"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/vmeyet/mrk-cli/releases/download/v0.3.1/mrk-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "05ad304a2384ca041b8929bfc769bd71a2683d74ae6efa3076a89baf29d9b6a3"
+      url "https://github.com/vmeyet/mrk-cli/releases/download/v0.4.0/mrk-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "bf48edf61b0c15ecdccf6dde711288dd40e874cb70bd4aac61c68a65aa2d1b97"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vmeyet/mrk-cli/releases/download/v0.3.1/mrk-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "5f781845dbac9f215469d275cdd74e7766619380c7d7f4f53a434b4eefbdbacc"
+      url "https://github.com/vmeyet/mrk-cli/releases/download/v0.4.0/mrk-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "482192d4b169337a6853892e076544831e1c8c1b68fcc44750096a8bd665fd22"
     end
   end
   license "MIT"
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin":      {},
-    "aarch64-unknown-linux-gnu": {},
-    "x86_64-apple-darwin":       {},
-    "x86_64-unknown-linux-gnu":  {},
+    "aarch64-apple-darwin":               {},
+    "aarch64-unknown-linux-gnu":          {},
+    "aarch64-unknown-linux-musl-dynamic": {},
+    "aarch64-unknown-linux-musl-static":  {},
+    "x86_64-apple-darwin":                {},
+    "x86_64-unknown-linux-gnu":           {},
+    "x86_64-unknown-linux-musl-dynamic":  {},
+    "x86_64-unknown-linux-musl-static":   {},
   }.freeze
 
   def target_triple
