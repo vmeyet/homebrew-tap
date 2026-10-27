@@ -1,15 +1,15 @@
 class Slack < Formula
   desc "Slack in your terminal, as yourself: a TUI plus scriptable commands."
   homepage "https://github.com/vmeyet/slack-tui"
-  version "0.2.0"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/vmeyet/slack-tui/releases/download/v0.2.0/slack-aarch64-apple-darwin.tar.xz"
-      sha256 "1d2cf64411d6be8abe7b1867fc3dc3024722987535d67dafa0b7848ba5c01961"
+      url "https://github.com/vmeyet/slack-tui/releases/download/v0.3.0/slack-aarch64-apple-darwin.tar.xz"
+      sha256 "28c02977918d3da4df70744b63e9c7ec5e9d15efc14c26f6086dfc3921753f73"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vmeyet/slack-tui/releases/download/v0.2.0/slack-x86_64-apple-darwin.tar.xz"
-      sha256 "f78a807e10fcbe279f50c41e63f4f4406a18eaf54e6c68e26544d1ea3de5bd58"
+      url "https://github.com/vmeyet/slack-tui/releases/download/v0.3.0/slack-x86_64-apple-darwin.tar.xz"
+      sha256 "54d89a4c49780481b66ab87f97e0f414780d0f0c8227dc4b5979bb4af14782f9"
     end
   end
   license "MIT"
