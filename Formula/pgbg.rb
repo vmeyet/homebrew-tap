@@ -1,15 +1,15 @@
 class Pgbg < Formula
   desc "Read your PostgreSQL databases from the terminal: local, staging, and production behind a tunnel."
   homepage "https://github.com/vmeyet/pgbg-tui"
-  version "0.3.0"
+  version "0.3.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/vmeyet/pgbg-tui/releases/download/v0.3.0/pgbg-aarch64-apple-darwin.tar.xz"
-      sha256 "b99a6ac541231f26aa8257ddbcd6c7b38de9bea75d4fd24e1c4fc62203c3faaa"
+      url "https://github.com/vmeyet/pgbg-tui/releases/download/v0.3.1/pgbg-aarch64-apple-darwin.tar.xz"
+      sha256 "02f5282870dc6e56ce00321e30ca8a241a7097f26d676ed1b2b7cd662eef3710"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vmeyet/pgbg-tui/releases/download/v0.3.0/pgbg-x86_64-apple-darwin.tar.xz"
-      sha256 "93707c265c924222afe72b311c3fe0eee47cbb963b4bd9059442a47b8ad5e5e1"
+      url "https://github.com/vmeyet/pgbg-tui/releases/download/v0.3.1/pgbg-x86_64-apple-darwin.tar.xz"
+      sha256 "27384566f82d243e8bf522ab06aac782e83fb6181276a801cbce514ddea524b7"
     end
   end
   license "MIT"
