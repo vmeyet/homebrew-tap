@@ -1,25 +1,25 @@
 class Mrk < Formula
   desc "Render Markdown beautifully in the terminal: syntax highlighting, tables, themes, and Mermaid diagrams as images."
   homepage "https://github.com/vmeyet/mrk-cli"
-  version "0.8.0"
+  version "0.9.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/vmeyet/mrk-cli/releases/download/v0.8.0/mrk-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "a0d191687e81194d841ef41d0607af3618c307c6caf2295c5298edeaa3431ec2"
+      url "https://github.com/vmeyet/mrk-cli/releases/download/v0.9.0/mrk-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "717c041d41b1dfc47f32f61eddad58f51156b5470271cdaee9d89071170a1d04"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vmeyet/mrk-cli/releases/download/v0.8.0/mrk-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "a16ece92e034add53f97c5fe086398d8e3275165cef22c6ff15db9e410459128"
+      url "https://github.com/vmeyet/mrk-cli/releases/download/v0.9.0/mrk-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "81543c74ed3daf5639c4e44c853fe5f677ca475943a4acf2a181298934f3ec27"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/vmeyet/mrk-cli/releases/download/v0.8.0/mrk-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "cf59a6e64d474614c42bbb89cbd8876bb99dd96b55f9b49def473736cb7606c8"
+      url "https://github.com/vmeyet/mrk-cli/releases/download/v0.9.0/mrk-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "b0b621ed6b9e1b636e5fb9db7e227e75ca7278d255f3aae49c64e8a31c8a2c80"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vmeyet/mrk-cli/releases/download/v0.8.0/mrk-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "66a15c246a1910bae14a8d75b0e5b5d715b62d84e424ce82d7197e1a37975803"
+      url "https://github.com/vmeyet/mrk-cli/releases/download/v0.9.0/mrk-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "8684409461b5ce75b421e9ae7f6738656377abdddc983eb188862bc65dfc04bc"
     end
   end
   license "MIT"
