@@ -1,15 +1,15 @@
 class Revu < Formula
   desc "Review GitLab merge requests and GitHub pull requests from your terminal: a TUI plus scriptable commands."
   homepage "https://github.com/vmeyet/revu-tui"
-  version "0.14.0"
+  version "0.15.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/vmeyet/revu-tui/releases/download/v0.14.0/revu-aarch64-apple-darwin.tar.xz"
-      sha256 "852954889c1e1438c28a79a08c7bdde41d3b435d1f7d78881c9e253dbb94121c"
+      url "https://github.com/vmeyet/revu-tui/releases/download/v0.15.0/revu-aarch64-apple-darwin.tar.xz"
+      sha256 "c7eedf3b8fa7f133a865cdbd91600631bc548f6f5f0665688c00b56450b0a13d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vmeyet/revu-tui/releases/download/v0.14.0/revu-x86_64-apple-darwin.tar.xz"
-      sha256 "02ad1f514427e0d73c1a970b284dc1f76b8ae460e4ceeab1b133693d152a9521"
+      url "https://github.com/vmeyet/revu-tui/releases/download/v0.15.0/revu-x86_64-apple-darwin.tar.xz"
+      sha256 "5572647b6323352a05b9a48d2779548e63535f2e86911550298eb28219f477a8"
     end
   end
   license "MIT"
